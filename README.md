@@ -7,6 +7,6 @@ Hello World
 [![Releases](https://img.shields.io/github/release/patryklbn/sem/all.svg?style=flat-square)](https://github.com/patryklbn/sem/releases)
 
 # Software Engineering Methods
-![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/patryklbn/sem/all.svg/develop?style=flat-square)
+[![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/patryklbn/sem/all.svg/develop?style=flat-square)](https://img.shields.io/github/actions/workflow/status/patryklbn/sem/A%20workflow%20for%20my%20Hello%20World%20App?branch=develop)
 
 
