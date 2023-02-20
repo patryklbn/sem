@@ -16,8 +16,8 @@ public class App {
         // Extract employee salary information
         ArrayList<Employee> employees = a.getAllSalaries();
 
-        // Test the size of the returned data - should be 240124
-        System.out.println(employees.size());
+        // Print salaries
+        a.printSalaries(employees);
 
         // Disconnect from database
         a.disconnect();
@@ -107,6 +107,23 @@ public class App {
             return null;
         }
     }
+    /**
+     * Prints a list of employees.
+     * @param employees The list of employees to print.
+     */
+    public void printSalaries(ArrayList<Employee> employees)
+    {
+        // Print header
+        System.out.println(String.format("%-10s %-15s %-20s %-8s", "Emp No", "First Name", "Last Name", "Salary"));
+        // Loop over all employees in the list
+        for (Employee emp : employees)
+        {
+            String emp_string =
+                    String.format("%-10s %-15s %-20s %-8s",
+                            emp.emp_no, emp.first_name, emp.last_name, emp.salary);
+            System.out.println(emp_string);
+        }
+    }
 
     /**
      * Connection to MySQL database.
@@ -129,9 +146,9 @@ public class App {
             System.out.println("Connecting to database...");
             try {
                 // Wait a bit for db to start
-                Thread.sleep(10000);
+                Thread.sleep(0);
                 // Connect to database
-                con = DriverManager.getConnection("jdbc:mysql://db:3306/employees?useSSL=false", "root", "example");
+                con = DriverManager.getConnection("jdbc:mysql://localhost:33060/employees?useSSL=false", "root", "example");
                 System.out.println("Successfully connected");
                 break;
             } catch (SQLException sqle) {
