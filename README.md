@@ -14,4 +14,7 @@ License
 Release
 [![Releases](https://img.shields.io/github/release/patryklbn/sem/all.svg?style=flat-square)](https://github.com/patryklbn/sem/releases)
 
+CodeCov
+[![codecov](https://codecov.io/gh/patryklbn/sem/branch/master/graph/badge.svg?token=CG0WPX42Y0)](https://codecov.io/gh/patryklbn/sem)
+
 
