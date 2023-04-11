@@ -17,6 +17,14 @@ body:
       placeholder: ex. email@example.com
     validations:
       required: false
+  - type: checkboxes
+    id: new-bug
+    attributes:
+      label: Is there an existing issue for this?
+      description: Please search to see if an issue already exists for the bug you encountered.
+      options:
+      - label: I have searched the existing issues
+        required: true
   - type: textarea
     id: what-happened
     attributes:
@@ -32,10 +40,10 @@ body:
       label: Version
       description: What version of our software are you running?
       options:
-        - 1.0.2 (Default)
-        - 1.0.3 (Edge)
+        - latest (Default)
+
     validations:
-      required: true
+      required: false
   - type: dropdown
     id: browsers
     attributes:
